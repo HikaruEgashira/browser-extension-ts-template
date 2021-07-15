@@ -2,6 +2,7 @@
   "extends": "@sindresorhus/tsconfig",
   "include": ["source/*"],
   "compilerOptions": {
-    "outDir": "distribution"
+    "outDir": "distribution",
+    "types": ["typed-query-selector"]
   }
 }

@@ -1,4 +1,10 @@
 {
   "xo.enable": true,
-  "xo.format.enable": true
+  "xo.format.enable": true,
+  "json.schemas": [
+    {
+      "fileMatch": ["source/manifest.json"],
+      "url": "http://json.schemastore.org/chrome-manifest"
+    }
+  ]
 }

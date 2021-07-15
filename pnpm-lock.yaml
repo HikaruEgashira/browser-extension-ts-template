@@ -13,6 +13,8 @@ specifiers:
   '@parcel/transformer-posthtml': ^2.0.0-nightly.771
   '@parcel/transformer-webextension': ^2.0.0-nightly.2393
   '@sindresorhus/tsconfig': ^1.0.2
+  '@types/react': ^17.0.14
+  '@types/react-dom': ^17.0.9
   husky: ^7.0.1
   lint-staged: ^11.0.1
   npm-run-all: ^4.1.5
@@ -22,6 +24,7 @@ specifiers:
   react-dom: ^17.0.2
   stylelint: ^13.13.1
   stylelint-config-xo: ^0.20.0
+  typed-query-selector: ^2.6.0
   webext-options-sync: ^2.0.1
   webextension-polyfill-ts: ^0.26.0
   xo: ^0.37.1
@@ -45,6 +48,8 @@ devDependencies:
   '@parcel/transformer-posthtml': 2.0.0-nightly.771
   '@parcel/transformer-webextension': 2.0.0-nightly.2393
   '@sindresorhus/tsconfig': 1.0.2
+  '@types/react': 17.0.14
+  '@types/react-dom': 17.0.9
   husky: 7.0.1
   lint-staged: 11.0.1
   npm-run-all: 4.1.5
@@ -52,6 +57,7 @@ devDependencies:
   prettier: 2.3.2
   stylelint: 13.13.1
   stylelint-config-xo: 0.20.0_stylelint@13.13.1
+  typed-query-selector: 2.6.0
   xo: 0.37.1
 
 packages:
@@ -1639,6 +1645,28 @@ packages:
     resolution: {integrity: sha512-//oorEZjL6sbPcKUaCdIGlIUeH26mgzimjBB77G6XRgnDl/L5wOnpyBGRe/Mmf5CVW3PwEBE1NjiMZ/ssFh4wA==}
     dev: true
 
+  /@types/prop-types/15.7.4:
+    resolution: {integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==}
+    dev: true
+
+  /@types/react-dom/17.0.9:
+    resolution: {integrity: sha512-wIvGxLfgpVDSAMH5utdL9Ngm5Owu0VsGmldro3ORLXV8CShrL8awVj06NuEXFQ5xyaYfdca7Sgbk/50Ri1GdPg==}
+    dependencies:
+      '@types/react': 17.0.14
+    dev: true
+
+  /@types/react/17.0.14:
+    resolution: {integrity: sha512-0WwKHUbWuQWOce61UexYuWTGuGY/8JvtUe/dtQ6lR4sZ3UiylHotJeWpf3ArP9+DSGUoLY3wbU59VyMrJps5VQ==}
+    dependencies:
+      '@types/prop-types': 15.7.4
+      '@types/scheduler': 0.16.2
+      csstype: 3.0.8
+    dev: true
+
+  /@types/scheduler/0.16.2:
+    resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
+    dev: true
+
   /@types/unist/2.0.6:
     resolution: {integrity: sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==}
     dev: true
@@ -2868,6 +2896,10 @@ packages:
     resolution: {integrity: sha512-GBrLZYZ4X4x6/QEoBnIrqb8B/f5l4+8me2dkom/j1Gtbxy0kBv6OGzKuAsGM75bkGwGAFkt56Iwg28S3XTZgSA==}
     dependencies:
       cssom: 0.3.8
+    dev: true
+
+  /csstype/3.0.8:
+    resolution: {integrity: sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==}
     dev: true
 
   /dashdash/1.14.1:
@@ -8244,6 +8276,10 @@ packages:
   /type-fest/0.8.1:
     resolution: {integrity: sha512-4dbzIzqvjtgiM5rw1k5rEHtBANKmdudhGyBEajN01fEyhaAIhsoKNy6y7+IN93IfpFtwY9iqi7kD+xwKhQsNJA==}
     engines: {node: '>=8'}
+    dev: true
+
+  /typed-query-selector/2.6.0:
+    resolution: {integrity: sha512-llEbyoMma7brStvVKDGZaCH1/8kcJis3HZibB4LrLRlZz3C7wGkPH/B1jE9+eiArBh0x4tIFIjNt30HsT0VF3Q==}
     dev: true
 
   /typedarray-to-buffer/3.1.5:

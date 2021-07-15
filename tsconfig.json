@@ -3,6 +3,6 @@
   "include": ["source/*"],
   "compilerOptions": {
     "outDir": "distribution",
-    "types": ["typed-query-selector"]
+    "types": ["typed-query-selector/strict"]
   }
 }

@@ -1,14 +1,14 @@
 {
-  "singleQuote": true,
-  "trailingComma": "none",
-  "arrowParens": "avoid",
-  "overrides": [
-    {
-      "files": "*.md",
-      "options": {
-        "printWidth": 70,
-        "proseWrap": "never"
-      }
-    }
-  ]
+	"singleQuote": true,
+	"trailingComma": "none",
+	"arrowParens": "avoid",
+	"overrides": [
+		{
+			"files": "*.md",
+			"options": {
+				"printWidth": 70,
+				"proseWrap": "never"
+			}
+		}
+	]
 }

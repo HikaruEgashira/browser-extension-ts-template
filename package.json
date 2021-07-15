@@ -9,7 +9,7 @@
 		"test": "run-p lint:* build",
 		"posttest": "npm run format",
 		"watch": "parcel watch source/manifest.json --dist-dir distribution --no-cache --no-hmr",
-		"format": "prettier --loglevel warn --write \"**/*.{js,css,md}\"",
+		"format": "prettier --loglevel warn --write .",
 		"prepare": "husky install"
 	},
 	"browserslist": [

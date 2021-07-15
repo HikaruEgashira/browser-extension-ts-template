@@ -1,8 +1,8 @@
 {
-  "extends": "@sindresorhus/tsconfig",
-  "include": ["source/*"],
-  "compilerOptions": {
-    "outDir": "distribution",
-    "types": ["typed-query-selector/strict"]
-  }
+	"extends": "@sindresorhus/tsconfig",
+	"include": ["source/*"],
+	"compilerOptions": {
+		"outDir": "distribution",
+		"types": ["typed-query-selector/strict"]
+	}
 }

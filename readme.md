@@ -56,8 +56,6 @@ The GitHub Actions workflow will:
 2. Create a version number based on the current UTC date time, like [`19.6.16`](https://github.com/fregante/daily-version-action) and sets it in the manifest.json
 3. Deploy it to both stores
 
-
-
 #### Auto-publishing
 
 Thanks to the included [GitHub Action Workflows](.github/workflows), if you set up those secrets in the repo's Settings, the deployment will automatically happen:

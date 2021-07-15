@@ -1,5 +1,4 @@
 // Don't forget to import this wherever you use it
-// @ts-ignore
 import browser from 'webextension-polyfill-ts';
 
 import optionsStorage from './options-storage.js';

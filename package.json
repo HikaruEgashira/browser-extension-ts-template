@@ -8,7 +8,7 @@
 		"lint:js": "xo",
 		"test": "run-p lint:* build",
 		"posttest": "npm run format",
-		"watch": "parcel watch source/manifest.json --dist-dir distribution --no-cache --no-hmr",
+		"watch": "parcel watch source/manifest.json --dist-dir distribution",
 		"format": "prettier --loglevel warn --write .",
 		"prepare": "husky install"
 	},
@@ -24,36 +24,28 @@
 			"no-unused-vars": [
 				"error",
 				{
-					"varsIgnorePattern": "browser"
+					"varsIgnorePattern": "browser|React"
 				}
 			],
 			"object-curly-spacing": "off"
 		}
 	},
 	"stylelint": {
-		"extends": "stylelint-config-xo"
+		"extends": [
+			"stylelint-config-xo"
+		]
 	},
 	"dependencies": {
-		"react": "^17.0.2",
-		"react-dom": "^17.0.2",
+		"dom-chef": "^5.0.0",
+		"select-dom": "^7.1.1",
 		"webext-options-sync": "^2.0.1",
 		"webextension-polyfill-ts": "^0.26.0"
 	},
 	"devDependencies": {
 		"@parcel/config-webextension": "^2.0.0-nightly.2220",
-		"@parcel/optimizer-cssnano": "^2.0.0-nightly.771",
-		"@parcel/optimizer-htmlnano": "^2.0.0-nightly.771",
-		"@parcel/packager-css": "^2.0.0-nightly.771",
-		"@parcel/packager-html": "^2.0.0-nightly.771",
-		"@parcel/transformer-css": "^2.0.0-nightly.771",
-		"@parcel/transformer-html": "^2.0.0-nightly.771",
-		"@parcel/transformer-image": "^2.0.0-nightly.2393",
-		"@parcel/transformer-postcss": "^2.0.0-nightly.771",
-		"@parcel/transformer-posthtml": "^2.0.0-nightly.771",
-		"@parcel/transformer-webextension": "^2.0.0-nightly.2393",
+		"@parcel/transformer-image": "2.0.0-nightly.2393+b549b1d2",
+		"@parcel/transformer-sass": "2.0.0-nightly.771+b549b1d2",
 		"@sindresorhus/tsconfig": "^1.0.2",
-		"@types/react": "^17.0.14",
-		"@types/react-dom": "^17.0.9",
 		"husky": "^7.0.1",
 		"lint-staged": "^11.0.1",
 		"npm-run-all": "^4.1.5",

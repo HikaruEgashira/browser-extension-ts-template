@@ -21,7 +21,7 @@
 		{
 			"matches": ["<all_urls>"],
 			"js": ["content-script.ts"],
-			"css": [],
+			"css": ["components/global.scss"],
 			"run_at": "document_end"
 		}
 	]

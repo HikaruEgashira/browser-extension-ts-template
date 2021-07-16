@@ -4,7 +4,7 @@
 		"build": "parcel build source/manifest.json --no-content-hash --no-source-maps --dist-dir distribution --no-cache --detailed-report 0",
 		"lint": "run-p lint:*",
 		"lint-fix": "run-p 'lint:* -- --fix'",
-		"lint:css": "stylelint source/**/*.css",
+		"lint:css": "stylelint source/**/*.scss",
 		"lint:js": "xo",
 		"test": "run-p lint:* build",
 		"posttest": "npm run format",
@@ -26,7 +26,7 @@
 	},
 	"stylelint": {
 		"extends": [
-			"stylelint-config-xo"
+			"stylelint-config-xo-scss"
 		]
 	},
 	"dependencies": {
@@ -46,7 +46,7 @@
 		"parcel": "^2.0.0-nightly.769",
 		"prettier": "^2.3.2",
 		"stylelint": "^13.13.1",
-		"stylelint-config-xo": "^0.20.0",
+		"stylelint-config-xo-scss": "^0.14.0",
 		"typed-query-selector": "^2.6.0",
 		"xo": "^0.37.1"
 	},
@@ -54,8 +54,8 @@
 		"sourceDir": "distribution"
 	},
 	"lint-staged": {
-		"*.css": "stylelint --fix",
-		"*.{js,css,md,ts,tsx}": [
+		"*.scss": "stylelint --fix",
+		"*.{js,scss,md,ts,tsx}": [
 			"prettier --write",
 			"xo --fix"
 		]

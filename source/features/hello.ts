@@ -1,10 +1,10 @@
-import { createFeature, Feature } from '../domains/feature';
+import { createFeature } from '../domains/feature';
 
-const feature: Feature = {
+const feature = createFeature({
 	name: 'hello',
-	init: async () => {
-		console.log('hello');
+	init: async option => {
+		console.log(`awesome extension is ${option}!`);
 	}
-};
+});
 
-export default createFeature(feature);
+export default feature;

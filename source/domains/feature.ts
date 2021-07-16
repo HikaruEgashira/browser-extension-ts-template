@@ -1,6 +1,6 @@
 import { Option } from './option';
 
-export type Feature = {
+export type F = {
 	name: string;
 	description?: string;
 	defaultOption?: Option; // Defalut is 'enable',
@@ -8,9 +8,9 @@ export type Feature = {
 	init: (option: Option) => Promise<void>;
 };
 
-export type F = Required<Feature>;
+export type Feature = Required<F>;
 
-export const createFeature = (feature: Feature): F => ({
+export const createFeature = (feature: F): Feature => ({
 	description: '',
 	defaultOption: 'enable',
 	options: ['enable', 'disable'],

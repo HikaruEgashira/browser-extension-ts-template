@@ -1,14 +1,15 @@
 import React from 'dom-chef';
 import select from 'select-dom';
 
-import { createFeature, Feature } from '../domains/feature';
+import { createFeature } from '../domains/feature';
 
-const feature: Feature = {
+const feature = createFeature({
 	name: 'widget',
 	description: 'Inserts widget after the last child of body',
 	init: async () => {
-		select('body')!.append(<div className="widget">Hello</div>);
+		const date = new Date();
+		select('body')!.append(<div className="widget">{date.toString()}</div>);
 	}
-};
+});
 
-export default createFeature(feature);
+export default feature;

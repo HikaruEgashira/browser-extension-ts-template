@@ -21,12 +21,6 @@
 			"browser"
 		],
 		"rules": {
-			"no-unused-vars": [
-				"error",
-				{
-					"varsIgnorePattern": "browser|React"
-				}
-			],
 			"object-curly-spacing": "off"
 		}
 	},

@@ -1,9 +1,28 @@
 // Don't forget to import this wherever you use it
 // @ts-expect-error
 import browser from 'webextension-polyfill-ts';
+import select from 'select-dom';
+import React from 'dom-chef';
 
 import optionsStorage from './options-storage';
+import { featureList } from './features';
 
+const forms = featureList.map(feature => {
+	return (
+		<div>
+			<label>
+				<span>{feature.name}</span>
+				<span>{feature.description}</span>
+				<select name={feature.name} id={feature.name}>
+					{feature.options?.map(v => (
+						<option value={v}>{v}</option>
+					))}
+				</select>
+			</label>
+		</div>
+	);
+});
+select('#options-form')?.append(<>{forms}</>);
 // eslint-disable-next-line @typescript-eslint/no-floating-promises
 optionsStorage.syncForm('#options-form');
 

@@ -5,6 +5,7 @@ export type F = {
 	description?: string;
 	defaultOption?: Option; // Defalut is 'enable',
 	options?: Option[]; // Default is ['enable', 'disable']
+	include: Array<(url: URL | HTMLAnchorElement | Location) => boolean>;
 	init: (option: Option) => Promise<void>;
 };
 

@@ -1,5 +1,5 @@
 import OptionsSync from 'webext-options-sync';
-import { featureList } from './features';
+import { featureList } from '../features';
 
 const featureOptionList = Object.fromEntries(
 	featureList.map(feature => [feature.name, feature.defaultOption])

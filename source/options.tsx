@@ -4,7 +4,7 @@ import browser from 'webextension-polyfill-ts';
 import select from 'select-dom';
 import React from 'dom-chef';
 
-import optionsStorage from './options-storage';
+import optionsStorage from './interface/options-storage';
 import { featureList } from './features';
 
 select('#options-form')?.append(

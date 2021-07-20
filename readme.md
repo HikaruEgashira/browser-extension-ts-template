@@ -1,6 +1,6 @@
-# browser-extension-template
+# browser-extension-typescript-template
 
-[link-webext-polyfill]: https://github.com/mozilla/webextension-polyfill
+[link-webext-polyfill-ts]: https://github.com/Lusito/webextension-polyfill-ts
 [link-rgh]: https://github.com/sindresorhus/refined-github
 [link-ngh]: https://github.com/sindresorhus/notifier-for-github
 [link-hfog]: https://github.com/sindresorhus/hide-files-on-github
@@ -11,23 +11,15 @@
 
 > Barebones boilerplate with Parcel 2, options handler and auto-publishing.
 
-![Sample extension output](media/previewer.png)
+<!-- ![Sample extension output](media/previewer.png) -->
 
 ## Features
 
 - Use npm dependencies thanks to Parcel 2.
-- Use modern Promise-based `browser.*` APIs [webextension-polyfill][link-webext-polyfill].
+- Use modern Promise-based `browser.*` APIs [webextension-polyfill-ts][link-webext-polyfill-ts].
 - [Auto-syncing options](#auto-syncing-options).
 - [Auto-publishing](#publishing) with auto-versioning and support for manual releases.
 - [Extensive configuration documentation](#configuration).
-
-## How to use this template
-
-Click [<kbd>Use this template</kbd>](https://github.com/fregante/browser-extension-template/generate) and make a copy of your own. 😉
-
-## Configuration
-
-The extension doesn't target any specific ECMAScript environment or provide any transpiling by default. The extensions output will be the same ECMAScript you write. This allows us to always target the latest browser version, which is a good practice you should be following.
 
 ### Parcel 2
 

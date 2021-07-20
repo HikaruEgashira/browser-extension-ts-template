@@ -36,14 +36,14 @@
 		"webextension-polyfill-ts": "^0.26.0"
 	},
 	"devDependencies": {
-		"@parcel/config-webextension": "^2.0.0-nightly.2220",
-		"@parcel/transformer-image": "2.0.0-nightly.2393+b549b1d2",
-		"@parcel/transformer-sass": "2.0.0-nightly.771+b549b1d2",
+		"@parcel/config-webextension": "^2.0.0-nightly.2400",
+		"@parcel/transformer-image": "2.0.0-nightly.2400+ba7d2263",
+		"@parcel/transformer-sass": "2.0.0-nightly.778+ba7d2263",
 		"@sindresorhus/tsconfig": "^1.0.2",
 		"husky": "^7.0.1",
 		"lint-staged": "^11.0.1",
 		"npm-run-all": "^4.1.5",
-		"parcel": "^2.0.0-nightly.769",
+		"parcel": "^2.0.0-nightly.776",
 		"prettier": "^2.3.2",
 		"stylelint": "^13.13.1",
 		"stylelint-config-xo-scss": "^0.14.0",

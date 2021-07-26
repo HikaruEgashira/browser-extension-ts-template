@@ -7,9 +7,6 @@ const featureOptionList = Object.fromEntries(
 
 const optionSync = new OptionsSync({
 	defaults: {
-		colorRed: 244,
-		colorGreen: 67,
-		colorBlue: 54,
 		...featureOptionList
 	},
 	migrations: [OptionsSync.migrations.removeUnused],
